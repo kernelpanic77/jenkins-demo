@@ -1,8 +1,8 @@
-from utils import add, sub, mul
+def add(a,b):
+    return a+b
 
-if __name__ == '__main__':
-    a = 12
-    b = 2
-    print(add(a,b))
-    print(sub(a,b))
-    print(mul(a,b))
+def sub(a,b):
+    return a-b
+
+def mul(a,b):
+    return a*b
