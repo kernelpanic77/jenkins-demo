@@ -21,7 +21,7 @@ agent any
     } 
     post {  
       always {  
-          echo 'This will always run'  
+          mail bcc: '', body: "<b>Jenkins Build Info</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', replyTo: '', subject: "SUCCESS CI: Project name -> ${env.JOB_NAME}", to: "shanware.ishan@gmail.com";  
       }  
       success {  
           mail bcc: '', body: "<b>Jenkins Build Info</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', replyTo: '', subject: "SUCCESS CI: Project name -> ${env.JOB_NAME}", to: "shanware.ishan@gmail.com";  
