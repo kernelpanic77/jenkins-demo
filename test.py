@@ -1,8 +1,8 @@
 from utils import add, mul, sub
 
 def tests():
-    res = mul(7, 5)
-    expected = 35
+    res = mul(69, 69)
+    expected = 4761
     assert res == expected 
     print("add(1, 2) = ", res, "\nPass")
 
