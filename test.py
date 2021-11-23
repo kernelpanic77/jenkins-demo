@@ -2,7 +2,7 @@ from utils import add, mul, sub
 
 def tests():
     res = mul(7, 5)
-    expected = 35
+    expected = 3
     assert res == expected 
     print("add(1, 2) = ", res, "\nPass")
 
